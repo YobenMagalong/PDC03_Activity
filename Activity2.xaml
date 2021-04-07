@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD2.Activity2" Title="XAML and Code Interactions - YCM">
+    <ContentPage.Content>
+        <StackLayout>
+            <Slider VerticalOptions="CenterAndExpand"
+                    ValueChanged="OnSlideValueChanged"/>
+            <Label x:Name="valuelabel"
+                   Text="Simple Label"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand" />
+            <Button Text="Click Me"
+                    Clicked="OnButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
