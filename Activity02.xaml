@@ -24,8 +24,8 @@
                        Padding="10">
                     <StackLayout Orientation="Horizontal"
                                  Spacing="20">
-                        <BoxView Color="Salmon"/>
-                        <Label Text="Salmon"
+                        <BoxView Color="Red"/>
+                        <Label Text="Red"
                                FontSize="Large" 
                                VerticalOptions="CenterAndExpand"/>
                     </StackLayout>
