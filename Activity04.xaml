@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD2.Activity04" Title="Absolute Layout">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Frame>
+                <AbsoluteLayout Margin="20">
+                    <BoxView Color="Blue"
+                     AbsoluteLayout.LayoutBounds="0, 10, 250, 10" />
+                    <BoxView Color="Blue"
+                     AbsoluteLayout.LayoutBounds="0, 30, 250, 10" />
+                    <BoxView Color="Black"
+                     AbsoluteLayout.LayoutBounds="10, 0, 10, 70" />
+                    <BoxView Color="Black"
+                     AbsoluteLayout.LayoutBounds="30, 0, 10, 70" />
+                </AbsoluteLayout>
+            </Frame>-->
+            <!--<Frame HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand">
+                <AbsoluteLayout Margin="20">
+                    <BoxView Color="Blue"
+                             AbsoluteLayout.LayoutBounds="0.5, 0, 100, 25"
+                             AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    <BoxView Color="Red"
+                             AbsoluteLayout.LayoutBounds="0, 0.5, 25, 100"
+                             AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    <BoxView Color="Black"
+                             AbsoluteLayout.LayoutBounds="1, 0.5, 25, 100"
+                             AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    <BoxView Color="Violet"
+                             AbsoluteLayout.LayoutBounds="0.5, 1, 100, 25"
+                             AbsoluteLayout.LayoutFlags="PositionProportional" />
+                </AbsoluteLayout>
+            </Frame>-->
+            <AbsoluteLayout Padding="20"
+                                VerticalOptions="CenterAndExpand">
+                <Entry AbsoluteLayout.LayoutBounds="0, 0, 1, 40"
+                           AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+                           Placeholder="Username" 
+                           HorizontalOptions="FillAndExpand" />
+                <Entry AbsoluteLayout.LayoutBounds="0, 60, 1, 40"
+                           AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+                           Placeholder="Password" 
+                           HorizontalOptions="FillAndExpand" />
+                <Entry AbsoluteLayout.LayoutBounds="0, 120, 0.5, 40"
+                           AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+                           Placeholder="Name" 
+                           HorizontalOptions="FillAndExpand"/>
+                <Entry AbsoluteLayout.LayoutBounds="1, 120, 0.5, 40"
+                           AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+                           Placeholder="Phone" 
+                           HorizontalOptions="FillAndExpand" />
+                <Button AbsoluteLayout.LayoutBounds="0, 180, 1, 40"
+                            AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
+                            HorizontalOptions="FillAndExpand"
+                            Text="Register"
+                            TextColor="White"
+                            BackgroundColor="LightGreen" />
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
