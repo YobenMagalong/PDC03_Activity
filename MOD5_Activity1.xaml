@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD2.MOD5_Activity1" Title="Switch Control">
+    <ContentPage.Content>
+        <StackLayout>
+            <Switch IsToggled="True">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="Commonstate">
+                        <VisualState x:Name="On">
+                            <VisualState.Setters>
+                                <Setter Property="ThumbColor"
+                                        Value="Red"/>
+                                <Setter Property="OnColor"
+                                        Value="Yellow"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Off">
+                            <VisualState.Setters>
+                                <Setter Property="ThumbColor"
+                                        Value="Red"/>
+                                <Setter Property="OnColor"
+                                        Value="Pink"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Switch>
+
+            <Switch IsToggled="True"
+                    OnColor="Red"
+                    ThumbColor="Blue">
+            </Switch>
+
+            <Switch x:Name="ActionSwitch" />
+
+            <Label Text="Off">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                                 Binding="{Binding Source={x:Reference ActionSwitch}, Path=IsToggled}"
+                                 Value="True">
+                        <Setter Property="Text"
+                                Value="On"/>
+                        <Setter Property="TextColor"
+                                Value="Red"/>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

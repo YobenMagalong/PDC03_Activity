@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD2.MOD5_Activity2" Title="Enter">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Sample Entry"/>
+                <Entry Text="Sample Entry"/>
+
+                <Label Text="Placeholder"/>
+                <Entry Placeholder="Username"
+                   PlaceholderColor="Gray"/>
+
+                <Label Text="Masked Password"/>
+                <Entry IsPassword="True"
+                   Placeholder="Password"/>
+
+                <Label Text="Limiting Entry"/>
+                <Entry MaxLength="5"/>
+
+                <Label Text="Character Spacing"/>
+                <Entry CharacterSpacing="15"
+                   Text="Spacing"/>
+
+                <Label Text="Cursor Position"/>
+                <Entry Text="+639"
+                   CursorPosition="4"/>
+
+                <Label Text="ClearButtonVisibility"/>
+                <Entry ClearButtonVisibility="WhileEditing"/>
+
+                <Label Text="Dialing"/>
+                <Entry Keyboard="Telephone"/>
+
+                <Label Text="Number"/>
+                <Entry Keyboard="Numeric"/>
+
+                <Label Text="Appearance"/>
+                <Entry TextColor="White"
+                       BackgroundColor="Black"/>
+
+                <Label Text="Prevent Text Entry"/>
+                <Entry IsReadOnly="True"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
